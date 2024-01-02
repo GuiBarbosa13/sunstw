@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Unlock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+:root{
+    --fonte-primaria:'Unlock', serif;
+    --fonte-secundaria: 'Inter', sans-serif;
+}
+
+
+#cabecalho{
+    height: 178px;
+    width: 1440;
+    background-color: #5ACFE9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#cabecalho__search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 33.33%;
+}
+
+#cabecalho__logo{
+    display: flex;
+    justify-content: center;
+    flex-basis: 33.33%;
+}
+
+#cabecalho__options{
+    display: flex;
+    justify-content: center;
+    flex-basis: 33.33%;
+}
+
+
+#search__header{
+    width: 300px;
+    height: 56px;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 16px;
+    color: black;
+}
+
+#cabecalho__menu{
+    font-family: var(--fonte-primaria);
+    font-size: 24px;
+}
+
+#cabecalho__menu__opcao{
+    text-decoration: none;
+    color: white;
+}
+
+.nav__header{
+    background-color: black;
+    display: flex;
+    height: 59px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 73px;
+}
+
+#nav__header__option{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: var(--fonte-primaria);
+
+}
+
+h1{
+    font-family: var(--fonte-primaria);
+    font-size: 40px;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.main__ofertas{
+    display: flex;
+    justify-content: space-around;
+}
+
+#main__ofertas__oferta__img{
+    border: solid;
+    border-radius: 15px;
+    border-color: #5ACFE9;
+    border-width: 21px;
+    background-color: #5ACFE9;
+}
+
+.main__ofertas__oferta{
+    text-align: center;
+}
+
+.p__oferta{
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.span__oferta{
+    font-size: 20px;
+}
+
+.botao__comprar{
+    padding-left: 86px;
+    padding-right: 86px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    text-decoration: none;
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    color: black;
+    font-size: 24px;
+    background-color: #F7B917;
+    border-radius: 15px;
+}
+
+footer{
+    height: 361px;
+    background-color: #5ACFE9;
+    border: solid;
+    border-style: inset;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-color: black;
+    border-width: 30px;
+    margin-top: 32px;
+}
+
+#rodape{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 77px;
+}
+
+#h1__rodape{
+    font-family: var(--fonte-primaria);
+    font-size: 24px;
+}
+
+#p__rodape{
+    font-size: 20px;
+    font-family: var(--fonte-secundaria);
+}
+
+.rodape__conteudo{
+    flex-basis: 20%;
+    text-align: center;
+}
