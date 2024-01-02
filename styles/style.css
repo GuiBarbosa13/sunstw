@@ -175,16 +175,32 @@ footer{
     text-align: center;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 930px){
     #cabecalho{
         width: 100vw;
         justify-content: center;
     }
 
     #search__header{
-        width: fit-content;
-        height: 60px;
+        display: block;
+        width: 129px;
+        height: 40px;
         font-size: 1rem;
+    }
+
+    #cabecalho__logo{
+        width: 20%;
+    }
+
+    #cabecalho__menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 0.7rem;
+    }
+
+    .nav__header{
+        justify-content: space-around;
     }
 
     h1{
@@ -229,8 +245,4 @@ footer{
         margin: auto;
         display: flex;
     }
-
-
-
-
 }
