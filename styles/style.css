@@ -15,7 +15,7 @@
 
 #cabecalho{
     height: 178px;
-    width: 1440;
+    width: 100%;
     background-color: #5ACFE9;
     display: flex;
     align-items: center;
@@ -46,7 +46,6 @@
 #search__header{
     width: 300px;
     height: 56px;
-    border: none;
     border-radius: 25px;
     text-align: center;
     font-family: var(--fonte-secundaria);
@@ -112,7 +111,7 @@ h1{
     font-size: 24px;
     text-align: center;
     margin-top: 32px;
-    margin-bottom: 32px;
+    margin-bottom: 15px;
 }
 
 .span__oferta{
@@ -120,6 +119,7 @@ h1{
 }
 
 .botao__comprar{
+    display: block;
     padding-left: 86px;
     padding-right: 86px;
     padding-top: 11px;
@@ -131,10 +131,15 @@ h1{
     font-size: 24px;
     background-color: #F7B917;
     border-radius: 15px;
+    
+}
+
+b{
+    font-weight: 700px;
 }
 
 footer{
-    height: 361px;
+    height: 30%; /*361px*/
     background-color: #5ACFE9;
     border: solid;
     border-style: inset;
@@ -157,15 +162,75 @@ footer{
 
 #h1__rodape{
     font-family: var(--fonte-primaria);
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 #p__rodape{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: var(--fonte-secundaria);
 }
 
 .rodape__conteudo{
     flex-basis: 20%;
     text-align: center;
+}
+
+@media (max-width: 1200px){
+    #cabecalho{
+        width: 100vw;
+        justify-content: center;
+    }
+
+    #search__header{
+        width: fit-content;
+        height: 60px;
+        font-size: 1rem;
+    }
+
+    h1{
+        margin-bottom: 0%;
+    }
+
+    .main__ofertas{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .main__ofertas__oferta{
+        width: 275px;
+        justify-content: center;
+        padding-top: 3%;
+    }
+
+    .botao__comprar{
+       display: block;
+       margin-bottom: 25%;
+    }
+
+    #rodape{
+        justify-content: space-around;
+        margin-top: 0%;
+        align-items: flex-start;
+        padding-top: 2%;
+        height: 100%;
+    }
+
+    #h1__rodape{
+        font-size: 1.2rem;
+    }
+
+    #p__rodape{
+        font-size: 0.9rem;
+    }
+
+    .rodape__img{
+        width: 25%;
+        margin: auto;
+        display: flex;
+    }
+
+
+
+
 }
